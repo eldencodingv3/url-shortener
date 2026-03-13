@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { customAlphabet } from 'nanoid'
 import { supabaseAdmin } from '@/lib/supabase'
 
+export const dynamic = 'force-dynamic'
+
 const nanoid = customAlphabet('abcdefghijklmnopqrstuvwxyz0123456789', 7)
 
 export async function POST(request: NextRequest) {
